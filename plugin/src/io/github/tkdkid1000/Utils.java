@@ -2,7 +2,10 @@ package io.github.tkdkid1000;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
+import org.bukkit.entity.Arrow;
+import org.bukkit.entity.Player;
 import org.bukkit.util.Vector;
 
 public class Utils {
@@ -23,5 +26,15 @@ public class Utils {
 			}
 		}
 		return blocks;
+	}
+	
+	public static int randomBound(int low, int high) {
+		return new Random().nextInt(high-low)+low;
+	}
+	
+	public Arrow shootArrowOffset(Player player) {
+		Arrow arrow = player.launchProjectile(Arrow.class);
+		arrow.setVelocity(arrow.getVelocity().multiply(randomBound(-2, 2)));
+		return arrow;
 	}
 }
