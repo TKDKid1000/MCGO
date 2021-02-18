@@ -1,0 +1,7 @@
+name: MCGOExamplePlugin
+version: 1.0.0
+main: io.github.tkdkid1000.Test
+depend: [MCGO]
+author: TKDKid1000
+website: https://tkdkid1000.github.io
+description: An example extension to MCGO! Adds a couple new guns!

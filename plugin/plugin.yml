@@ -1,0 +1,11 @@
+name: MCGO
+version: 1.3.0
+main: io.github.tkdkid1000.MCGO
+author: TKDKid1000
+website: https://tkdkid1000.github.io
+description: A Minecraft plugin that adds weapons from CSGO into Minecraft!
+commands:
+  mcgo:
+    description: The base mcgo command.
+    usage: /mcgo <version|help|guns|give> <user> <gun>
+    permission: mcgo.command
